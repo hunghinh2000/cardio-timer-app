@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coutdownBackgroundColor"
+    android:keepScreenOn="true"
+    tools:context=".view.HomeTimerActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlOptions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24sp"
+        android:fontFamily="@font/fs_harabara"
+        android:text="Cardio Timer"
+        android:textColor="@android:color/white"
+        android:textSize="56dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/layout_background">
+
+        <TextView
+            android:id="@+id/txtPractice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/fs_harabara"
+            android:text="Warmup time:"
+            android:textColor="@color/workWaveColor"
+            android:textSize="28sp"
+            android:transitionName="txtPracticeTransition" />
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/npPractice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPractice"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-14dp"
+            android:fontFamily="@font/main_font"
+            app:np_dividerColor="#00FFFFFF"
+            app:np_fadingEdgeEnabled="false"
+            app:np_height="56dp"
+            app:np_orientation="horizontal"
+            app:np_selectedTextColor="@color/workWaveColor"
+            app:np_selectedTextSize="28sp"
+            app:np_textColor="@color/coutdownBackgroundColor"
+            app:np_textSize="24sp"
+            app:np_width="135dp"
+            app:np_wrapSelectorWheel="true" />
+
+        <TextView
+            android:id="@+id/txtWorkTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/npPractice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-14dp"
+            android:fontFamily="@font/fs_harabara"
+            android:text="Working time:"
+            android:textColor="@color/workWaveColor"
+            android:textSize="28sp" />
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/npWorkTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtWorkTime"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-14dp"
+            android:fontFamily="@font/main_font"
+            app:np_dividerColor="#00FFFFFF"
+            app:np_dividerDistance="-15dp"
+            app:np_fadingEdgeEnabled="false"
+            app:np_height="56dp"
+            app:np_orientation="horizontal"
+            app:np_selectedTextColor="@color/workWaveColor"
+            app:np_selectedTextSize="28sp"
+            app:np_textColor="@color/coutdownBackgroundColor"
+            app:np_textSize="24sp"
+            app:np_value="4"
+            app:np_width="135dp" />
+
+        <TextView
+            android:id="@+id/txtRestTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/npWorkTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-14dp"
+            android:fontFamily="@font/fs_harabara"
+            android:text="Resting time:"
+            android:textColor="@color/workWaveColor"
+            android:textSize="28sp" />
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/npRestTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRestTime"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-14dp"
+            android:fontFamily="@font/main_font"
+            app:np_dividerColor="#00FFFFFF"
+            app:np_dividerDistance="-15dp"
+            app:np_fadingEdgeEnabled="false"
+            app:np_height="56dp"
+            app:np_orientation="horizontal"
+            app:np_selectedTextColor="@color/workWaveColor"
+            app:np_selectedTextSize="28sp"
+            app:np_textColor="@color/coutdownBackgroundColor"
+            app:np_textSize="24sp"
+            app:np_value="2"
+            app:np_width="135dp" />
+
+        <TextView
+            android:id="@+id/txtSets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/npRestTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-14dp"
+            android:fontFamily="@font/fs_harabara"
+            android:text="Sets:"
+            android:textColor="@color/workWaveColor"
+            android:textSize="28sp" />
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/npSets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSets"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-14dp"
+            app:np_dividerColor="#00FFFFFF"
+            app:np_dividerDistance="-15dp"
+            app:np_fadingEdgeEnabled="false"
+            app:np_height="56dp"
+            app:np_max="50"
+            app:np_min="1"
+            app:np_orientation="horizontal"
+            app:np_selectedTextColor="@color/workWaveColor"
+            app:np_selectedTextSize="28sp"
+            app:np_textColor="@color/coutdownBackgroundColor"
+            app:np_textSize="24sp"
+            app:np_value="8"
+            app:np_width="130dp" />
+
+        <TextView
+            android:id="@+id/txtTotalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/npSets"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-14dp"
+            android:fontFamily="@font/fs_harabara"
+            android:gravity="center"
+            android:text="Total:"
+            android:textColor="@color/workWaveColor"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTotalLabel"
+            android:layout_centerHorizontal="true"
+            android:transitionName="txtTotalTransition"
+            android:fontFamily="@font/fs_harabara"
+            android:gravity="center"
+            android:text="4 : 05"
+            android:textColor="@color/workWaveColor"
+            android:textSize="28sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlOptions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background_statelist"
+        android:fontFamily="@font/main_font"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="@color/workWaveColor"
+        android:textSize="24sp" />
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/wvHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="waveTransition"
+        app:wlv_progressValue="35"
+        app:wlv_shapeType="rectangle"
+        app:wlv_waveAmplitude="12"
+        app:wlv_waveColor="@color/workWaveColor"
+        app:wlv_wave_background_Color="#00FFFFFF" />
+
+
+</RelativeLayout>

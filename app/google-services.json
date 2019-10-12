@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "380982387498",
+    "firebase_url": "https://cardiotimer.firebaseio.com",
+    "project_id": "cardiotimer",
+    "storage_bucket": "cardiotimer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380982387498:android:214f18eced5491f8",
+        "android_client_info": {
+          "package_name": "com.hungjoker.timer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380982387498-uu886bdeq9gnf6u4vmcu3ses9lq0gfp9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hungjoker.timer",
+            "certificate_hash": "1f4ba1d5484e7bdc738c2c55030e16612e5b0d5d"
+          }
+        },
+        {
+          "client_id": "380982387498-u9jdqlgedguk77u6grtreo6i9mlq067l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsmUYb2xpy_5EiodtXqk3fgz_piEJfDSA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380982387498-u9jdqlgedguk77u6grtreo6i9mlq067l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

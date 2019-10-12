@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#525151</color>
+    <color name="workWaveColor">#FD0266</color>
+    <color name="restWaveColor">#26862C</color>
+    <color name="practiceWaveColor">#5C2EAD</color>
+    <color name="coutdownBackgroundColor">#212121</color>
+</resources>
